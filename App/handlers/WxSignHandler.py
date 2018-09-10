@@ -75,8 +75,8 @@ class WxSignatureHandler(BaseHandler):
                         if rfid.startswith('qrscene'):
                             rfid = rfid.split("_")[1]
                         DbInit = db_util()
-                        _sql = "INSERT INTO wx_openid_rfid(wx_user_id,wx_openid,wx_rfid,wx_create_time,wx_update_time) VALUES (%s,%s,%s,%s,%s) ON DUPLICATE KEY UPDATE wx_update_time = CURRENT_TIMESTAMP()"
-                        DbRsIns = DbInit.executeSQL(_sql, (0, FromUserName, rfid, create_time, create_time))
+                        _sql = "INSERT INTO wx_openid_rfid(wx_openid,wx_rfid,wx_create_time,wx_update_time) VALUES (%s,%s,%s,%s) "
+                        DbRsIns = DbInit.executeSQL(_sql, (FromUserName, rfid, create_time, create_time))
                         if DbRsIns:
                             DbInit.commit()
                             reply_content = '恭喜您！梦想护照与微信号绑定成功，感谢使用~'
