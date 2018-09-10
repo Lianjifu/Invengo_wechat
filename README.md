@@ -1,2 +1,2 @@
-# Invengo_wechat
+# wechat
 Development of WeChat public number
