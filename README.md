@@ -1,2 +1,2 @@
 # Invengo_wechat
-Get QRcode of wechat
+Development of WeChat public number
