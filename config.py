@@ -21,10 +21,10 @@ if env == 'prod':
     base_url = "http://" + host + ":" + ser_port + "/"
     ser_debug = False
     # MYSQL
-    pps_db = "ywgsh_wx"
-    db_host = "rm-bp1woxm70a39b9lixo.mysql.rds.aliyuncs.com"
-    db_usr = "ywgsh_wx_root"
-    db_pw = "Wx2018"
+    pps_db = ""
+    db_host = "
+    db_usr = ""
+    db_pw = ""
     db_port = 3306
     db_charset = "utf8"
 
@@ -33,10 +33,10 @@ elif env == 'dev':
     host = "localhost"
     base_url = "http://" + host + ":" + ser_port + "/"
     # MYSQL
-    pps_db = "ywgsh_wx"
-    db_host = "rm-bp1woxm70a39b9lixo.mysql.rds.aliyuncs.com"
-    db_usr = "ywgsh_wx_root"
-    db_pw = "Wx2018"
+    pps_db = ""
+    db_host = ""
+    db_usr = ""
+    db_pw = ""
     db_port = 3306
     db_charset = "utf8"
 
