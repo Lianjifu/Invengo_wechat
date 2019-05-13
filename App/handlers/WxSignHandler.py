@@ -75,11 +75,11 @@ class WxSignatureHandler(BaseHandler):
                         if rfid.startswith('qrscene'):
                             rfid = rfid.split("_")[1]
                         DbInit = db_util()
-                        _sql = "INSERT INTO wx_openid_rfid(wx_openid,wx_rfid,wx_create_time,wx_update_time) VALUES (%s,%s,%s,%s) "
+                        _sql = ""
                         DbRsIns = DbInit.executeSQL(_sql, (FromUserName, rfid, create_time, create_time))
                         if DbRsIns:
                             DbInit.commit()
-                            reply_content = '恭喜您！梦想护照与微信号绑定成功，感谢使用~'
+                            reply_content = '恭喜您！感谢使用~'
                             out = self.reply_text(FromUserName, ToUserName, create_time, reply_content)
                             self.write(out)
                         else:
