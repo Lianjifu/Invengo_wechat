@@ -8,11 +8,11 @@ sys.setdefaultencoding('utf8')
 class wxCofing(object):
     """微信开发--基础配置"""
 
-    AppID = "wx3c0e5fb5b4b72a55"
-    AppSecret = "0e782f23162e5a9f4089026017bed232"
+    AppID = ""
+    AppSecret = ""
 
     # 微信网页开发域名
-    AppHost = "http://wx.rfidtour.com"
+    AppHost = ""
 
     # 获取access_tokenc的url
     config_get_access_token_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s" % (
